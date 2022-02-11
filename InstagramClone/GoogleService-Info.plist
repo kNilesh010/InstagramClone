@@ -30,5 +30,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:1040739436164:ios:6590ce215b3d859ebea4d1</string>
+	<key>DATABASE_URL</key>
+	<string>https://instaclone-b9008-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>
