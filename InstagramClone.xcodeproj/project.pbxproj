@@ -29,6 +29,11 @@
 		671639D027B448EA00FF4DF8 /* PostEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671639CF27B448EA00FF4DF8 /* PostEditViewController.swift */; };
 		671639D227B448F900FF4DF8 /* PublishPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671639D127B448F900FF4DF8 /* PublishPostsViewController.swift */; };
 		671639D627B4584600FF4DF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 671639D527B4584600FF4DF8 /* GoogleService-Info.plist */; };
+		671639D827B59EA100FF4DF8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671639D727B59EA000FF4DF8 /* DataManager.swift */; };
+		671639DA27B59FBE00FF4DF8 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671639D927B59FBE00FF4DF8 /* AuthManager.swift */; };
+		671639DC27B59FED00FF4DF8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671639DB27B59FED00FF4DF8 /* StorageManager.swift */; };
+		671639DF27B5A43D00FF4DF8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671639DE27B5A43D00FF4DF8 /* Extensions.swift */; };
+		671639E127B5A7F400FF4DF8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671639E027B5A7F400FF4DF8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +60,11 @@
 		671639CF27B448EA00FF4DF8 /* PostEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditViewController.swift; sourceTree = "<group>"; };
 		671639D127B448F900FF4DF8 /* PublishPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostsViewController.swift; sourceTree = "<group>"; };
 		671639D527B4584600FF4DF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		671639D727B59EA000FF4DF8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		671639D927B59FBE00FF4DF8 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		671639DB27B59FED00FF4DF8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		671639DE27B5A43D00FF4DF8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		671639E027B5A7F400FF4DF8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6F1424AC6DC4521B7383E200 /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.release.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
 		A788AF4845D426EFC960E27A /* Pods_InstagramClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF32F3F4257F12A49ADADF3B /* Pods-InstagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.debug.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,7 +108,6 @@
 				671639AF27B4447600FF4DF8 /* Model */,
 				671639B127B4448B00FF4DF8 /* View */,
 				671639B227B4449200FF4DF8 /* Controller */,
-				671639A427B4431100FF4DF8 /* Assets.xcassets */,
 				671639A927B4431100FF4DF8 /* Info.plist */,
 			);
 			path = InstagramClone;
@@ -122,6 +131,7 @@
 		671639B127B4448B00FF4DF8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				671639A427B4431100FF4DF8 /* Assets.xcassets */,
 				671639A127B4431000FF4DF8 /* Main.storyboard */,
 				671639A627B4431100FF4DF8 /* LaunchScreen.storyboard */,
 			);
@@ -141,8 +151,12 @@
 		671639B327B444CE00FF4DF8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				671639DD27B5A42D00FF4DF8 /* Extensions */,
 				6716399B27B4431000FF4DF8 /* AppDelegate.swift */,
 				6716399D27B4431000FF4DF8 /* SceneDelegate.swift */,
+				671639D727B59EA000FF4DF8 /* DataManager.swift */,
+				671639D927B59FBE00FF4DF8 /* AuthManager.swift */,
+				671639DB27B59FED00FF4DF8 /* StorageManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -181,6 +195,15 @@
 				671639C727B4483200FF4DF8 /* RegistrationViewController.swift */,
 			);
 			path = LoginandRegistration;
+			sourceTree = "<group>";
+		};
+		671639DD27B5A42D00FF4DF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				671639DE27B5A43D00FF4DF8 /* Extensions.swift */,
+				671639E027B5A7F400FF4DF8 /* Constants.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		6FEE7D317D3570C6EB263FBA /* Frameworks */ = {
@@ -317,18 +340,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				671639A027B4431000FF4DF8 /* HomeViewController.swift in Sources */,
+				671639E127B5A7F400FF4DF8 /* Constants.swift in Sources */,
 				671639B727B446FA00FF4DF8 /* CameraViewController.swift in Sources */,
 				671639D027B448EA00FF4DF8 /* PostEditViewController.swift in Sources */,
 				671639CC27B4487D00FF4DF8 /* FollowersViewController.swift in Sources */,
 				6716399C27B4431000FF4DF8 /* AppDelegate.swift in Sources */,
 				671639C327B447FC00FF4DF8 /* SettingsViewController.swift in Sources */,
 				671639B927B4470800FF4DF8 /* NotificationsViewController.swift in Sources */,
+				671639DC27B59FED00FF4DF8 /* StorageManager.swift in Sources */,
+				671639D827B59EA100FF4DF8 /* DataManager.swift in Sources */,
 				671639BF27B447E500FF4DF8 /* PostsViewController.swift in Sources */,
 				671639C827B4483200FF4DF8 /* RegistrationViewController.swift in Sources */,
 				671639CE27B4489900FF4DF8 /* SearchUsersViewController.swift in Sources */,
 				671639BB27B4471300FF4DF8 /* ProfileViewController.swift in Sources */,
+				671639DF27B5A43D00FF4DF8 /* Extensions.swift in Sources */,
 				671639B527B446E200FF4DF8 /* SearchViewController.swift in Sources */,
 				6716399E27B4431000FF4DF8 /* SceneDelegate.swift in Sources */,
+				671639DA27B59FBE00FF4DF8 /* AuthManager.swift in Sources */,
 				671639C127B447F200FF4DF8 /* EditProfileViewController.swift in Sources */,
 				671639D227B448F900FF4DF8 /* PublishPostsViewController.swift in Sources */,
 				671639CA27B4487200FF4DF8 /* SearchResultViewController.swift in Sources */,
