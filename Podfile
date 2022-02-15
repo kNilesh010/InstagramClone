@@ -16,4 +16,6 @@ pod 'Firebase/Crashlytics'
 pod 'Firebase/Storage'
 pod 'Firebase/Firestore'
 
+pod 'SDWebImage'
+
 end

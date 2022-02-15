@@ -166,6 +166,8 @@ class LoginViewController: UIViewController {
                if success {
                    //logged-in successfully
                    self.dismiss(animated: true, completion: nil)
+                   let hvc = HomeViewController()
+                   self.present(hvc, animated: true, completion: nil)
                }else{
                    //login error
                    let loginAlert = UIAlertController(title: "Login failure", message: "There is an error while trying to login", preferredStyle: .alert)
